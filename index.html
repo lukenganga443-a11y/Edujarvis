@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,23 +10,32 @@
 
     <!-- Hero Section -->
     <section class="hero">
+
         <h1>EduJarvis</h1>
 
         <h2>The AI Tutor That Explains Until You Understand</h2>
 
         <p>
             Learn faster with simple explanations,
-            real examples, quizzes, and personalized learning.
+            examples, quizzes, and personalized learning.
         </p>
 
         <div class="hero-buttons">
-            <button>Get Started</button>
-            <button>Learn More</button>
+
+            <button onclick="getStarted()">
+                Get Started
+            </button>
+
+            <button onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+                Learn More
+            </button>
+
         </div>
+
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- Features -->
+    <section id="features" class="features">
 
         <h2>Why Students Love EduJarvis</h2>
 
@@ -34,35 +43,61 @@
 
             <div class="feature-card">
                 <h3>🧠 Explain Simply</h3>
-                <p>
-                    Break down difficult concepts into
-                    easy-to-understand explanations.
-                </p>
+                <p>Understand difficult concepts easily.</p>
             </div>
 
             <div class="feature-card">
                 <h3>📚 Give Examples</h3>
-                <p>
-                    Learn through practical examples that
-                    make concepts stick.
-                </p>
+                <p>Learn through real-world examples.</p>
             </div>
 
             <div class="feature-card">
                 <h3>📝 Quiz Me</h3>
-                <p>
-                    Test your knowledge instantly with
-                    personalized quizzes.
-                </p>
+                <p>Test your understanding instantly.</p>
             </div>
 
             <div class="feature-card">
                 <h3>🎯 Personalized Learning</h3>
-                <p>
-                    EduJarvis adapts to your learning style
-                    and helps where you struggle most.
-                </p>
+                <p>Learn at your own pace.</p>
             </div>
+
+        </div>
+
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo">
+
+        <h2>Try EduJarvis</h2>
+
+        <textarea
+            id="question"
+            placeholder="Ask a question..."
+        ></textarea>
+
+        <br>
+
+        <button onclick="askQuestion()">
+            Ask
+        </button>
+
+        <div id="response">
+            Your answer will appear here...
+        </div>
+
+        <div class="action-buttons">
+
+            <button onclick="explainSimple()">
+                Explain Like I'm 10
+            </button>
+
+            <button onclick="giveExamples()">
+                Give Examples
+            </button>
+
+            <button onclick="quizMe()">
+                Quiz Me
+            </button>
 
         </div>
 
@@ -72,6 +107,8 @@
     <footer>
         <p>© 2026 EduJarvis. Built for students.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
