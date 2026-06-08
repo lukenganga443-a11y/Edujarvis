@@ -1,49 +1,77 @@
-    <!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduJarvis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>EduJarvis</h1>
 
-    <h1>EduJarvis</h1>
+        <h2>The AI Tutor That Explains Until You Understand</h2>
 
-    <p>The AI Tutor that explains until you understand.</p>
+        <p>
+            Learn faster with simple explanations,
+            real examples, quizzes, and personalized learning.
+        </p>
 
-    <textarea
-        id="question"
-        placeholder="Ask a question..."
-    ></textarea>
+        <div class="hero-buttons">
+            <button>Get Started</button>
+            <button>Learn More</button>
+        </div>
+    </section>
 
-    <button onclick="askQuestion()">
-        Ask
-    </button>
+    <!-- Features Section -->
+    <section class="features">
 
-    <div id="response">
-        Your answer will appear here...
-    </div>
+        <h2>Why Students Love EduJarvis</h2>
 
-    <div class="buttons">
+        <div class="feature-container">
 
-        <button onclick="explainSimple()">
-            Explain Like I'm 10
-        </button>
+            <div class="feature-card">
+                <h3>🧠 Explain Simply</h3>
+                <p>
+                    Break down difficult concepts into
+                    easy-to-understand explanations.
+                </p>
+            </div>
 
-        <button onclick="examples()">
-            Give Examples
-        </button>
+            <div class="feature-card">
+                <h3>📚 Give Examples</h3>
+                <p>
+                    Learn through practical examples that
+                    make concepts stick.
+                </p>
+            </div>
 
-        <button onclick="quizMe()">
-            Quiz Me
-        </button>
+            <div class="feature-card">
+                <h3>📝 Quiz Me</h3>
+                <p>
+                    Test your knowledge instantly with
+                    personalized quizzes.
+                </p>
+            </div>
 
-    </div>
+            <div class="feature-card">
+                <h3>🎯 Personalized Learning</h3>
+                <p>
+                    EduJarvis adapts to your learning style
+                    and helps where you struggle most.
+                </p>
+            </div>
 
-</div>
+        </div>
 
-<script src="script.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 EduJarvis. Built for students.</p>
+    </footer>
 
 </body>
 </html>
