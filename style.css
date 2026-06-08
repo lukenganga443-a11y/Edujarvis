@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    margin-top:50px;
+}
+
+textarea{
+    width:80%;
+    height:100px;
+}
+
+button{
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#response{
+    background:white;
+    color:black;
+    padding:20px;
+    margin-top:20px;
+}

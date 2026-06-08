@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>EduJarvis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>EduJarvis</h1>
+
+    <p>The AI Tutor that explains until you understand.</p>
+
+    <textarea
+        id="question"
+        placeholder="Ask a question..."
+    ></textarea>
+
+    <button onclick="askQuestion()">
+        Ask
+    </button>
+
+    <div id="response">
+        Your answer will appear here...
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="explainSimple()">
+            Explain Like I'm 10
+        </button>
+
+        <button onclick="examples()">
+            Give Examples
+        </button>
+
+        <button onclick="quizMe()">
+            Quiz Me
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
