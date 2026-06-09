@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduJarvis Tutor</title>
+    <link rel="stylesheet" href="tutor.css">
+</head>
+<body>
+
+<nav>
+    <h2>EduJarvis Tutor</h2>
+    <a href="index.html">Home</a>
+</nav>
+
+<div class="container">
+
+    <h1>Ask EduJarvis</h1>
+
+    <select id="subject">
+        <option>Biology</option>
+        <option>Physics</option>
+        <option>Chemistry</option>
+        <option>Mathematics</option>
+    </select>
+
+    <textarea
+        id="question"
+        placeholder="Ask a question..."
+    ></textarea>
+
+    <button onclick="askQuestion()">
+        Ask
+    </button>
+
+    <div id="response">
+        Your answer will appear here...
+    </div>
+
+    <div class="actions">
+
+        <button onclick="explainSimple()">
+            Explain Like I'm 10
+        </button>
+
+        <button onclick="giveExamples()">
+            Give Examples
+        </button>
+
+        <button onclick="quizMe()">
+            Quiz Me
+        </button>
+
+    </div>
+
+</div>
+
+<script src="tutor.js"></script>
+
+</body>
+</html>

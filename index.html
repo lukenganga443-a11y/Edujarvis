@@ -8,107 +8,87 @@
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<nav>
+    <div class="logo">EduJarvis</div>
 
-        <h1>EduJarvis</h1>
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="tutor.html">Tutor</a>
+    </div>
+</nav>
 
-        <h2>The AI Tutor That Explains Until You Understand</h2>
+<section class="hero">
 
-        <p>
-            Learn faster with simple explanations,
-            examples, quizzes, and personalized learning.
-        </p>
+    <h1>EduJarvis</h1>
 
-        <div class="hero-buttons">
+    <h2>Learn Smarter, Not Harder</h2>
 
-            <button onclick="getStarted()">
-                Get Started
-            </button>
+    <p>
+        Get simple explanations, examples,
+        quizzes, and personalized learning support.
+    </p>
 
-            <button onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
-                Learn More
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="features">
-
-        <h2>Why Students Love EduJarvis</h2>
-
-        <div class="feature-container">
-
-            <div class="feature-card">
-                <h3>🧠 Explain Simply</h3>
-                <p>Understand difficult concepts easily.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>📚 Give Examples</h3>
-                <p>Learn through real-world examples.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>📝 Quiz Me</h3>
-                <p>Test your understanding instantly.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>🎯 Personalized Learning</h3>
-                <p>Learn at your own pace.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Demo Section -->
-    <section class="demo">
-
-        <h2>Try EduJarvis</h2>
-
-        <textarea
-            id="question"
-            placeholder="Ask a question..."
-        ></textarea>
-
-        <br>
-
-        <button onclick="askQuestion()">
-            Ask
+    <div class="hero-buttons">
+        <button onclick="getStarted()">
+            Get Started
         </button>
 
-        <div id="response">
-            Your answer will appear here...
+        <button onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+            Learn More
+        </button>
+    </div>
+
+</section>
+
+<section id="features" class="features">
+
+    <h2>Why Students Love EduJarvis</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>🧠 Explain Simply</h3>
+            <p>Understand difficult concepts easily.</p>
         </div>
 
-        <div class="action-buttons">
-
-            <button onclick="explainSimple()">
-                Explain Like I'm 10
-            </button>
-
-            <button onclick="giveExamples()">
-                Give Examples
-            </button>
-
-            <button onclick="quizMe()">
-                Quiz Me
-            </button>
-
+        <div class="feature-card">
+            <h3>📚 Give Examples</h3>
+            <p>Learn through practical examples.</p>
         </div>
 
-    </section>
+        <div class="feature-card">
+            <h3>📝 Quiz Me</h3>
+            <p>Test your understanding instantly.</p>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 EduJarvis. Built for students.</p>
-    </footer>
+        <div class="feature-card">
+            <h3>🎯 Personalized Learning</h3>
+            <p>Learn at your own pace.</p>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
+
+</section>
+
+<section class="testimonials">
+
+    <h2>Student Feedback</h2>
+
+    <div class="testimonial-card">
+        "Better explanations would help me understand concepts faster."
+    </div>
+
+    <div class="testimonial-card">
+        "I would definitely use this for revision."
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 EduJarvis. Built for students.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
